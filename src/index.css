@@ -40,6 +40,7 @@ footer p a {
   text-decoration: none;
   color: rgb(136, 136, 136);
   opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
 }
 footer p a:hover {
