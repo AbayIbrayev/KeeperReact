@@ -4,8 +4,8 @@ import Footer from "../footer";
 import Note from "../note";
 import notes from "../../notes";
 
-function createNotes({ title, content }) {
-  return <Note title={title} content={content} />;
+function createNotes({ key, title, content }) {
+  return <Note key={key} title={title} content={content} />;
 }
 
 const app = () => {
