@@ -9,9 +9,9 @@ const app = () => {
     <>
       <Header />
       <main>
-        {notes.map(({ key, title, content }) => {
-          return <Note key={key} title={title} content={content} />;
-        })}
+        {notes.map(({ key, title, content }) => (
+          <Note key={key} title={title} content={content} />
+        ))}
       </main>
       <Footer />
     </>
