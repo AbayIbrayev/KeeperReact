@@ -8,6 +8,7 @@ html {
 }
 body {
   background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
 }
 
 #root {
@@ -42,7 +43,7 @@ footer {
 }
 
 footer p {
-  color: #ccc;
+  color: #111;
 }
 footer a {
   color: #1388f5;
