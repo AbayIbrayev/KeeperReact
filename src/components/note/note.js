@@ -1,11 +1,15 @@
 import React from "react";
 
-const note = ({ title, content }) => {
+const note = ({ id, title, content, onDelete }) => {
+  function handleClick() {
+    onDelete(id);
+  }
+
   return (
     <div className="note">
       <h1>{title}</h1>
       <p>{content}</p>
-      <button>DELETE</button>
+      <button onClick={handleClick}>DELETE</button>
     </div>
   );
 };
