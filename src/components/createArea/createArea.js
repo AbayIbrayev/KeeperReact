@@ -19,13 +19,16 @@ const CreateArea = ({ onAdd }) => {
   }
 
   function submitNote(e) {
-    onAdd(note);
     e.preventDefault();
+    if (title.length > 0 && content.length > 0) {
+      onAdd(note);
+      setNote({ title: "", content: "" });
+    }
   }
 
   return (
     <div>
-      <form>
+      <form className="create-note">
         <input
           name="title"
           value={title}
